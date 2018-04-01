@@ -59,14 +59,16 @@ class Person:
             self.alive = True
         print("You are {0}".format("alive" if self.alive else "dead"))
 
+def main():
+    scott = Person(5*12+8, 195, 35, "brown")        # creates the person scott
+    print("Scott is {0}".format("alive" if scott.alive else "dead"))
+    print("Scott is {0} years old".format(scott.age))
+    scott.walk()
+    scott.die()
 
-Scott = Person(5*12+8, 195, 35, "brown")        # creates the person Scott
-print(Scott.alive)
-print(Scott.age)
-Scott.walk()
-Scott.die()
+    jacob = Person(5*12+10, 205, 18, "green", True)     # creates the person jacob
+    print("Jacob is {0}".format("alive" if jacob.alive else "dead"))
+    jacob.resurrect(jacob.alive)      # Tries to resurrect jacob. Since he's alive, he dies. You can't resurrect the living!
 
 
-Jacob = Person(5*12+10, 205, 18, "green", True)     # creates the person Jacob
-print(Jacob.alive)
-Jacob.resurrect(Jacob.alive)      # Tries to resurrect Jacob. Since he's alive, he dies. You can't resurrect the living!
+main()

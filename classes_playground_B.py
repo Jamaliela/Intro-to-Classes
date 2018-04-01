@@ -2,6 +2,7 @@ class Animal:
     """
     A class representing an animal
     """
+
     def __init__(self, fur, love, color, speed, legs, height, weight, name, toys = []):
         """
         The initializer method, which sets attributes of the animal when its created
@@ -51,17 +52,17 @@ class Animal:
 
 
 def main():
-    dog = Animal("Fluffy", 0, "Purple", 7, 4, 18, 60, "Jack", ["bone", "ball", "rope"])
+    jack = Animal("Fluffy", 0, "Purple", 7, 4, 18, 60, "Jack", ["bone", "ball", "rope"])
 
-    print(dog.num_legs)
-    print(dog.fur)
-    dog.run()
+    print(jack.num_legs)
+    print(jack.fur)
+    jack.run()
 
     kingkong = Animal("matted", 10, "black", 9, 2, 150*12, 50*2000, "King Kong")
     print(kingkong.height)
     print(kingkong.weight)
 
-    kingkong.reproduce(dog)         # poor Jack!
+    kingkong.reproduce(jack)         # poor Jack!
 
 
 main()

@@ -8,7 +8,7 @@
 ######################################################################
 # Acknowledgements:
 #
-# Based on the point class from our textbook: http://interactivepython.org/runestone/static/CSC226/Classes/classesintro.html
+# Based on the point class from our textbook: http://cs.berea.edu/courses/csc226book/classes_and_objects_I.html
 
 # licensed under a Creative Commons
 # Attribution-Noncommercial-Share Alike 3.0 United States License.
@@ -88,8 +88,6 @@ class Point:
             self.turtle.write(text, True)
         self.turtle.hideturtle()
 
-    # def midpoint(self, p1):
-
 
 # end class
 
@@ -101,22 +99,22 @@ def main():
     :return: None
     """
     wn = turtle.Screen()
-    wn.colormode(255)       # change color modes
+    wn.colormode(255)        # change color modes
 
-    p = Point()             # Instantiate an object of type Point at (0, 0)
+    p = Point()              # Instantiate an object of type Point at (0, 0)
 
-    print("point = "+ str(p))
+    print("point = " + str(p))
 
-    q = Point(30, 40)       # Make a second point at (30, 40)
-    print("point = "+ str(q))
+    q = Point(30, 40)        # Make a second point at (30, 40)
+    print("point = " + str(q))
 
-    p.draw_point()          # draw Point p as the default color of black
-    q.draw_point(255, 0, 0) # draw Point q as red (255, 0, 0)
+    p.draw_point()           # draw Point p as the default color of black
+    q.draw_point(255, 0, 0)  # draw Point q as red (255, 0, 0)
 
     print("\nPlease enter x and y values. To end enter x = 0 and y = 0.")
     while q.x != 0 or q.y != 0:
         q.user_set()
-        print("point = "+ str(q))
+        print("point = " + str(q))
         q.draw_point(random.randrange(256), random.randrange(256), random.randrange(256))
 
     wn.exitonclick()
