@@ -1,9 +1,9 @@
-class Car():
+class Car:
     """
     A class that represents a car
     """
 
-    def __init__(self, make, model, color, year, location, engine, rims = 18, tran = "automatic"):
+    def __init__(self, make, model, color, year, location, engine, rims=18, tran="automatic"):
         """
         Initializer method. Sets initial attributes based on user input
         :param make: car make

@@ -1,6 +1,6 @@
 ######################################################################
-# Author: Dr. Scott Heggen      TODO: Change this to your names
-# Username: heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
+# Username: lovelle & heggens             TODO: Change this to your usernames
 #
 # Assignment: T13: Intro to Classes
 #
@@ -35,8 +35,7 @@ class Point:
         """
         self.x = x
         self.y = y
-        self.turtle = turtle.Turtle()
-        self.turtle.hideturtle()
+        self.turtley = None
 
     def __str__(self):
         """
@@ -63,7 +62,7 @@ class Point:
         self.x = int(input("Enter x: "))
         self.y = int(input("Enter y: "))
 
-    def draw_point(self, r=0, g=0, b=0, text = ""):         # black is the default color
+    def draw_point(self, r=0, g=0, b=0, text=""):         # black is the default color
         """
         Instantiates a Turtle object and draws the Point on the Screen
 
@@ -73,28 +72,30 @@ class Point:
         :param text: any additional text to stamp
         :return: None
         """
-        self.turtle.color(r, g, b)
-        self.turtle.penup()
-        self.turtle.goto(self.x, self.y)
-        self.turtle.showturtle()
-        self.turtle.stamp()
+        if not self.turtley:
+            self.turtley = turtle.Turtle()
+            self.turtley.hideturtle()
+        self.turtley.color(r, g, b)
+        self.turtley.penup()
+        self.turtley.goto(self.x, self.y)
+        self.turtley.showturtle()
+        self.turtley.stamp()
 
         # This code was added from the original point.py class
         # to allow custom text to be written to the screen
-        self.turtle.penup()
+        self.turtley.penup()
         if text == "":
-            self.turtle.write(str(self), True)
+            self.turtley.write(str(self), True)
         else:
-            self.turtle.write(text, True)
-        self.turtle.hideturtle()
-
+            self.turtley.write(text, True)
+        self.turtley.hideturtle()
 
 # end class
 
 
 def main():
     """
-    A program that demonstrates use of the Point class
+    A program that demonstrates the use of the Point class
 
     :return: None
     """
@@ -118,5 +119,6 @@ def main():
         q.draw_point(random.randrange(256), random.randrange(256), random.randrange(256))
 
     wn.exitonclick()
+
 
 main()

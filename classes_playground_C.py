@@ -6,6 +6,7 @@ class Person:
     def __init__(self, height, weight, age, color, alive = True):
         """
         An initializer method to represent a person, including all of their initial attributes
+
         :param height: the person's height
         :param weight: the person's weight
         :param age: the person's age
@@ -21,6 +22,7 @@ class Person:
     def walk(self):
         """
         Takes the person for a walk
+
         :return: None
         """
         print("Go forward")
@@ -28,6 +30,7 @@ class Person:
     def die(self):
         """
         Kills the person
+
         :return: None
         """
         self.alive = False
@@ -36,6 +39,7 @@ class Person:
     def eat(self):
         """
         Let's the person eat
+
         :return: None
         """
         print("Yum")
@@ -43,6 +47,7 @@ class Person:
     def dance(self):
         """
         Makes the person dance
+
         :return: None
         """
         print("Look away")
@@ -50,6 +55,7 @@ class Person:
     def resurrect(self, alive):
         """
         Resurrects the person if they are dead. If they are alive, kills them.
+
         :param alive: Boolean representing if the person is alive or dead
         :return: None
         """
@@ -58,6 +64,7 @@ class Person:
         else:
             self.alive = True
         print("You are {0}".format("alive" if self.alive else "dead"))
+
 
 def main():
     scott = Person(5*12+8, 195, 35, "brown")        # creates the person scott
