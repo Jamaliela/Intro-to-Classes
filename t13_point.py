@@ -118,7 +118,9 @@ def main():
         print("point = " + str(q))
         q.draw_point(random.randrange(256), random.randrange(256), random.randrange(256))
 
-    wn.exitonclick()
+    print("Exiting. Bye!")
+    wn.bye()
 
 
-main()
+if __name__ == "__main__":
+    main()
