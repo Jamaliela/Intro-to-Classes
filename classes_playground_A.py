@@ -1,6 +1,6 @@
 class Car:
     """
-    A class that represents a car
+    A class that represents a car.
     """
 
     def __init__(self, make, model, color, year, location, engine, rims=18, tran="automatic"):

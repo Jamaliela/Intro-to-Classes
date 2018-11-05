@@ -1,6 +1,6 @@
 class Person:
     """
-    A class to represent a person
+    A class to represent a person.
     """
 
     def __init__(self, height, weight, age, color, alive = True):

@@ -1,6 +1,6 @@
 class Animal:
     """
-    A class representing an animal
+    A class representing an animal.
     """
 
     def __init__(self, fur, love, color, speed, legs, height, weight, name, toys = []):
