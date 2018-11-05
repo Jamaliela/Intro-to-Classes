@@ -1,8 +1,8 @@
 ######################################################################
-# Author: Dr. Scott Heggen      TODO: Change this to your names
-# Username: heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
+# Username: lovelle & heggens             TODO: Change this to your usernames
 #
-# Assignment: T14: Crazy Shapes
+# Assignment: T13: Intro to Classes
 #
 # Purpose:  Demonstrate the collaboration between classes, such as using a point to create a rectangle
 ######################################################################

@@ -1,8 +1,8 @@
 ######################################################################
-# Author: Dr. Scott Heggen      TODO: Change this to your names
-# Username: heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
+# Username: lovelle & heggens             TODO: Change this to your usernames
 #
-# Assignment: T14: Crazy Shapes
+# Assignment: T13: Intro to Classes
 #
 #
 # Purpose: A class for creating rectangles. Collaborates with the Points class
