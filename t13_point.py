@@ -16,6 +16,7 @@
 
 import turtle       # needed by both point class and main()
 import random       # needed by main()
+import math         # needed in drawing lines and calculating distance
 
 
 class Point:
@@ -36,6 +37,7 @@ class Point:
         self.x = x
         self.y = y
         self.turtley = None
+        self.color = "red"
 
     def __str__(self):
         """
@@ -90,6 +92,12 @@ class Point:
             self.turtley.write(text, True)
         self.turtley.hideturtle()
 
+    def dist(self, p):                                   # we want this method to calculate the distance between the points
+        dis = math.sqrt((p.y-self.y)**2+(p.x-self.x)**2)   # this follows the math formula for calculating the distance between points
+        return dis
+
+
+
 # end class
 
 
@@ -111,13 +119,13 @@ def main():
 
     p.draw_point()           # draw Point p as the default color of black
     q.draw_point(255, 0, 0)  # draw Point q as red (255, 0, 0)
+    print(q.dist(p))
 
     print("\nPlease enter x and y values. To end enter x = 0 and y = 0.")
     while q.x != 0 or q.y != 0:
         q.user_set()
         print("point = " + str(q))
         q.draw_point(random.randrange(256), random.randrange(256), random.randrange(256))
-
     print("Exiting. Bye!")
     wn.bye()
 
