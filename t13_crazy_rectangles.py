@@ -1,6 +1,6 @@
 ######################################################################
-# Author: Emily Lovell & Scott Heggen      TODO: Change this to your names
-# Username: lovelle & heggens             TODO: Change this to your usernames
+# Author: Emily Lovell & Scott Heggen      TODO: Ela Jamali & Thomas West
+# Username: lovelle & heggens             TODO: Jamalie & Westt
 #
 # Assignment: T13: Intro to Classes
 #
